@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* 2. Fondo de la página y tipografía general (Colores y Fuentes) */
+/* 2. Fondo de la página y tipografía general */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    color: #61dafb; /* Azul brillante para resaltar el nombre de la tienda en el fondo oscuro */
+    color: #61dafb;
     margin-bottom: 10px;
 }
 
@@ -47,6 +47,7 @@ nav {
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -65,24 +66,23 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* 5. Espacios, bordes y márgenes para secciones y productos */
+/* 5. Contenedores y Secciones */
 section {
-    margin: 20px auto;        
-    padding: 20px;           
-    border: 2px solid #ccc;  
-    max-width: 800px;        
-    background-color: #ffffff; 
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    max-width: 800px;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* 6. Colores para los títulos generales */
 h2, h3 {
     color: #1a73e8;
     margin-bottom: 10px;
 }
 
-/* 7. Listas de productos destacados y efectos alternos */
+/* 6. Listas de productos y efectos alternos */
 section ul {
     list-style: none;
     padding: 0;
@@ -95,7 +95,6 @@ section ul li {
     border: 1px solid #e0e0e0;
 }
 
-/* Selector nth-child (para pintar filas alternas de listas) */
 section ul li:nth-child(odd) {
     background-color: #e9ecef;
 }
@@ -104,7 +103,28 @@ section ul li:nth-child(even) {
     background-color: #ffffff;
 }
 
-/* 8. Botones de compra / interacción */
+/* 7. Formularios y botones */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    height: 100px;
+}
+
 .btn-comprar {
     background-color: #28a745;
     color: white;
@@ -120,7 +140,7 @@ section ul li:nth-child(even) {
     background-color: #218838;
 }
 
-/* 9. Pie de página */
+/* 8. Pie de página */
 footer {
     text-align: center;
     padding: 20px;
