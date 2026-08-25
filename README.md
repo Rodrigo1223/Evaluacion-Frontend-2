@@ -1,35 +1,30 @@
-# Proyecto: GameZone | Desarrollo Frontend I (Semana 2)
+Proyecto: GameZone - Desarrollo Frontend I
+Este proyecto consiste en la creación de una página web para una tienda de videojuegos, desarrollada como parte de la Evaluación 1 de la asignatura Desarrollo Frontend I en Duoc UC.
 
-Este repositorio contiene el desarrollo de la Actividad de la Semana 2 para la asignatura **Desarrollo Frontend I** de Duoc UC. El objetivo principal de esta etapa fue aplicar estilos profesionales mediante **CSS3** a la tienda web de videojuegos "GameZone".
+Descripción del Proyecto
+El objetivo principal es implementar la estructura básica de un sitio web utilizando etiquetas semánticas de HTML5 para garantizar una organización lógica y accesible del contenido.
 
-## 🏗️ Estructura del Proyecto en VS Code
-El proyecto mantiene una arquitectura de directorios limpia y modular:
+Estructura del Sitio
+El sitio cuenta con las siguientes secciones implementadas semánticamente:
 
-C:.
-|   contacto.html
-|   productos.html
-|   README.md
-|   rodrigo_olavarria_PFY2201_HTML_Semana1.html
-|
-+---.vscode
-|       extensions.json
-|
-+---css
-|       rodrigo_olavarria_PFY2201_CSS_Semana2.css
-|
-+---imagenes
-|       logo-gamezone.jpg
-|
-\---js
+Header (<header>): Contiene el título principal de la tienda.
 
-## 🚀 Características y Tecnologías Aplicadas
-* **HTML5:** Estructura semántica de las páginas (`index`/`inicio`, `productos.html`, `contacto.html`).
-* **CSS3:** Hoja de estilos externa ubicada en la carpeta `css/`.
-* **Modelo de Cajas (*Box Model*):** Uso global de `box-sizing: border-box`, control de `padding`, `margin` y bordes redondeados.
-* **Selectores Avanzados:** Uso de selectores por clase (`.btn-comprar`), descendentes y pseudo-clases dinámicas/estructurales (`:hover`, `:nth-child`).
-* **Control de Versiones:** Repositorio gestionado con Git y desplegado en línea mediante **GitHub Pages**.
+Navegación (<nav>): Menú de navegación que permite desplazarse entre las páginas (Inicio, Productos, Contacto).
 
-## 👤 Datos del Estudiante
-* **Nombre:** Rodrigo Olavarria
-* **Asignatura:** Desarrollo Frontend I (PFY2201)
-* **Institución:** Duoc UC
+Contenido Principal (<section>): Sección dedicada a mostrar los productos destacados con sus descripciones y detalles.
+
+Pie de página (<footer>): Información de contacto relevante y enlaces a redes sociales.
+
+Tecnologías Utilizadas
+HTML5: Estructura semántica del sitio.
+
+CSS3: (Preparado para futuros estilos).
+
+JavaScript: (Preparado para futuras funcionalidades).
+
+Estudiante
+Nombre: Rodrigo Olavarria
+
+Asignatura: Desarrollo Frontend I
+
+Institución: Duoc UC
