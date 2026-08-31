@@ -38,27 +38,26 @@ header img {
     margin: 15px 0;
 }
 
-/* 4. Menú de Navegación */
+/* 4. Menú de Navegación (Actualizado con Flexbox) */
 nav {
     background-color: #282c34;
-    padding: 10px 0;
-    text-align: center;
+    padding: 12px 20px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espaciado moderno con Flexbox */
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s;
 }
 
 nav ul li a:hover {
@@ -71,7 +70,7 @@ section {
     margin: 20px auto;
     padding: 20px;
     border: 2px solid #ccc;
-    max-width: 800px;
+    max-width: 900px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -82,17 +81,28 @@ h2, h3 {
     margin-bottom: 10px;
 }
 
-/* 6. Listas de productos y efectos alternos */
+/* 6. Listas de productos y efectos alternos (Actualizado con CSS Grid) */
 section ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cuadrícula de 2 columnas por defecto */
+    gap: 20px;
 }
 
 section ul li {
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
     border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+section ul li:hover {
+    transform: translateY(-4px); /* Efecto interactivo al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 section ul li:nth-child(odd) {
@@ -133,7 +143,8 @@ form textarea {
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 .btn-comprar:hover {
@@ -157,4 +168,32 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* ==========================================
+   9. MEDIA QUERIES (Responsividad obligatoria)
+   ================================---------- */
+
+/* Tablets y pantallas medianas (menor a 768px) */
+@media (max-width: 768px) {
+    section ul {
+        grid-template-columns: 1fr; /* Pasa de 2 columnas a 1 sola columna */
+    }
+    
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+/* Dispositivos móviles pequeños (menor a 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* El menú de navegación se vuelve vertical en celulares */
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }

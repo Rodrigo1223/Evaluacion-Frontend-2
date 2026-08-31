@@ -1,30 +1,33 @@
-Proyecto: GameZone - Desarrollo Frontend I
-Este proyecto consiste en la creación de una página web para una tienda de videojuegos, desarrollada como parte de la Evaluación 1 de la asignatura Desarrollo Frontend I en Duoc UC.
+# 🎮 Evaluación 3 - Desarrollo Frontend I (Duoc UC)
 
-Descripción del Proyecto
-El objetivo principal es implementar la estructura básica de un sitio web utilizando etiquetas semánticas de HTML5 para garantizar una organización lógica y accesible del contenido.
+Sitio web e-commerce básico para una tienda de videojuegos, desarrollado con HTML semántico y CSS moderno, implementando un diseño responsivo mediante Flexbox y CSS Grid.
 
-Estructura del Sitio
-El sitio cuenta con las siguientes secciones implementadas semánticamente:
+---
 
-Header (<header>): Contiene el título principal de la tienda.
+## 🚀 Enlace de Visualización en Línea (GitHub Pages)
+Puedes ver el proyecto funcionando en el siguiente enlace de GitHub Pages:  
+https://github.com/Rodrigo1223/Desarrollo_FrontendI_Evaluacion_Sumativa3-.git
 
-Navegación (<nav>): Menú de navegación que permite desplazarse entre las páginas (Inicio, Productos, Contacto).
+---
 
-Contenido Principal (<section>): Sección dedicada a mostrar los productos destacados con sus descripciones y detalles.
+## ✅ Checklist de Tecnologías y Requerimientos Aplicados
 
-Pie de página (<footer>): Información de contacto relevante y enlaces a redes sociales.
+- [x] **HTML Semántico:** Uso de etiquetas estructurales modernas como `<header>`, `<nav>`, `<main>`, `<section>` y `<footer>`.
+- [x] **Estructura Estándar:** Archivo principal nombrado como `index.html` ubicado en la raíz del proyecto para asegurar el despliegue automático en el hosting.
+- [x] **Hoja de Estilos Externa:** Enlace correcto a un archivo CSS externo (`styles.css`).
+- [x] **Modelo de Cajas:** Aplicación adecuada de `box-sizing: border-box`, `padding`, `margin`, `border-radius` y `box-shadow`.
+- [x] **Tipografía y Colores:** Definición de una paleta de colores coherente y tipografías legibles.
+- [x] **Flexbox:** Utilizado para ordenar y alinear de manera fluida la barra de navegación y el encabezado.
+- [x] **CSS Grid:** Utilizado para estructurar el catálogo de productos en un diseño bidimensional limpio.
+- [x] **Selectores Avanzados:** Uso de `:hover` para efectos interactivos y `:nth-child()` para aplicar estilos alternados en las tarjetas de productos.
+- [x] **Diseño Responsivo:** Implementación de **Media Queries** para garantizar una correcta visualización en dispositivos móviles, tablets y escritorios.
+- [x] **Control de Versiones y Despliegue:** Proyecto organizado en un repositorio público de GitHub y publicado en **GitHub Pages**.
 
-Tecnologías Utilizadas
-HTML5: Estructura semántica del sitio.
+---
 
-CSS3: (Preparado para futuros estilos).
+## 📂 Estructura del Proyecto
 
-JavaScript: (Preparado para futuras funcionalidades).
-
-Estudiante
-Nombre: Rodrigo Olavarria
-
-Asignatura: Desarrollo Frontend I
-
-Institución: Duoc UC
+```text
+├── index.html        # Página principal del e-commerce
+├── styles.css        # Hoja de estilos principal con comentarios numerados
+└── README.md         # Documentación del proyecto
